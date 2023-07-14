@@ -1,0 +1,6 @@
+venv
+test*
+tmp
+**__pycache__**
+logs
+**.log
