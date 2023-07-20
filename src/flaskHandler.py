@@ -1,7 +1,4 @@
 import flask
-import json
-import os
-import requests
 from flask_cors import CORS, cross_origin
 from src.utlis import write_logs,get_error_message,get_success_message
 

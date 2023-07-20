@@ -1,5 +1,4 @@
 import os
-import requests
 import json
 from datetime import datetime
 from src.__version__ import version
@@ -16,9 +15,9 @@ def rotate_logs_file(filename,cur_date):
 
 def write_logs(log_type,data):
     if log_type == "ERROR":
-        file_name = './logs/error/errors.log'
+        file_name = './logs/errors.log'
     else:
-        file_name = './logs/output/access.log'
+        file_name = './logs/access.log'
     
     current_time = datetime.now()
     rotate_logs_file(file_name,current_time)
